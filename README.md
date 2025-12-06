@@ -57,10 +57,10 @@ It is designed to be simple, fast, and easy to deploy on any shared hosting or s
 Edit your `db.php` file:
 
 ```php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "zarinpay";
+$servername = "localhost";
+$username = "";
+$password = "";
+$database = "zarinpay";
 ```
 
 ### 2. Create MySQL Table
