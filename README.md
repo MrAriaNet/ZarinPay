@@ -95,7 +95,14 @@ $merchant_id = "YOUR-MERCHANT-ID-HERE";
 In `request.php`:
 
 ```php
-$callback_url = "https://yourdomain.com/verify.php";
+// Prepare data for Zarinpal
+$data = [
+    "merchant_id" => $merchant_id,
+    "amount" => $amount,
+    "callback_url" => "https://yourdomain.com/verify.php",
+    "description" => $description,
+    "metadata" => ["email" => $email, "mobile" => $mobile]
+];
 ```
 
 ---
